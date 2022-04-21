@@ -1,0 +1,12 @@
+{
+  "book": {
+    "category": "fiction",
+    "author": "Test Elek",
+    "title": "Test",
+    "price": 9999
+  },
+  "bicycle": {
+    "color": "white",
+    "price": 20.21
+  }
+}
