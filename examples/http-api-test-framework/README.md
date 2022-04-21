@@ -1,9 +1,9 @@
 # TEST FRAMEWORK
 An example test automation framework solution based on Java, Cucumber, Spring
-using a custom, additionally developed [http-api-test-core](/http-api-test/http-api-test-support/http-api-test-core) library, showcasing its capabilities.
+using a custom, additionally developed [http-api-test-core](/http-api-test-support/http-api-test-core) library, showcasing its capabilities.
 
 Includes:
-* [System Under Test (SUT)](/http-api-test/examples/employee-rest-app) - Spring boot application used to demonstrate the framework capabilities,
+* [System Under Test (SUT)](/examples/employee-rest-app) - Spring boot application used to demonstrate the framework capabilities,
 * Extended test execution reporting with Cucumber and Allure Report,
 * Configuration management to support the execution of various test environments in parallel,
 * Parallel execution capability to speed up test execution.
@@ -41,7 +41,7 @@ Test execution is triggered by `mvn test` command. It is recommended to execute 
 clear previous test results.
 
 ### Employee Spring boot based REST API
-To run the provided Spring boot app [employee-rest-app](/http-api-test/examples/employee-rest-app) 
+To run the provided Spring boot app [employee-rest-app](/examples/employee-rest-app) 
  
 Navigate to it's root folder and perform
 ```
@@ -50,7 +50,7 @@ mvn spring-boot:run
 ```
 Then the app should run on localhost:8081. Supported endpoints are available under http://localhost:8081/api
 
-For further details please refer to: [Employee REST API](/http-api-test/examples/employee-rest-app/README.md)
+For further details please refer to: [Employee REST API](/examples/employee-rest-app/README.md)
 
 ### Scenario execution
 Run full suite:

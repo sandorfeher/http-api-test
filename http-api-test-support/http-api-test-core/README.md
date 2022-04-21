@@ -76,7 +76,7 @@ Scenario: Create a new employee - using random value placeholders in expressions
   Then status code should be 200
 ```
 
-Please find further examples [here](/http-api-test/examples/http-api-test-framework/src/test/resources/com/example/test/features)
+Please find further examples [here](/examples/http-api-test-framework/src/test/resources/com/example/test/features)
 
 ## Test Data Management
 
@@ -157,7 +157,7 @@ Pattern
 ## Installation
 
 Please find usage example
-in [example-test-framework](/http-api-test/examples/http-api-test-framework).
+in [example-test-framework](/examples/http-api-test-framework).
 
 ### Maven
 
@@ -182,7 +182,7 @@ in [example-test-framework](/http-api-test/examples/http-api-test-framework).
 ```
 
 Please find detailed
-in [pom.xml](/http-api-test/examples/http-api-test-framework/pom.xml)
+in [pom.xml](/examples/http-api-test-framework/pom.xml)
 with surefire, allure report build configuration.
 
 ## Cucumber
@@ -232,4 +232,4 @@ public class ServiceUnderTestHook {
 ```
 
 Please find example hook
-here: [SUT hook](/http-api-test/examples/http-api-test-framework/src/test/java/com/example/test/hooks/ServiceUnderTestHook.java).
+here: [SUT hook](/examples/http-api-test-framework/src/test/java/com/example/test/hooks/ServiceUnderTestHook.java).
