@@ -11,3 +11,5 @@ The solution follows a modularized approach, containing the following modules:
 - [examples](examples):
   - [http-api-test-framework](examples/http-api-test-framework): used for test case implementation with the above dependency
   - [employee-rest-app](examples/employee-rest-app): Spring boot application used to demonstrate the framework capabilities
+
+Contributor: @zpetranyi
