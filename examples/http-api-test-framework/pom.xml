@@ -14,18 +14,18 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <java.version>11</java.version>
+    <java.version>17</java.version>
     <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
     <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
     <lombok.version>1.18.22</lombok.version>
-    <aspectj.version>1.9.7</aspectj.version>
-    <allure.version>2.17.3</allure.version>
+    <aspectj.version>1.9.22.1</aspectj.version>
+    <allure.version>2.27.0</allure.version>
     <allure.reportVersion>2.13.8</allure.reportVersion>
     <allure.maven.version>2.11.2</allure.maven.version>
     <maven-checkstyle-plugin.version>3.1.2</maven-checkstyle-plugin.version>
-    <checkstyle.version>8.39</checkstyle.version>
+    <checkstyle.version>10.17.0</checkstyle.version>
     <checkstyle.rules.directory>${basedir}/src/build/rules</checkstyle.rules.directory>
-    <checkstyle.config.location>${checkstyle.rules.directory}/checkstyle_rules.xml
+    <checkstyle.config.location>${checkstyle.rules.directory}/google_checks.xml
     </checkstyle.config.location>
     <checkstyle.default.suppressions.location>
       ${checkstyle.rules.directory}/suppressions_defaults.xml
@@ -50,11 +50,12 @@
     <dependency>
       <groupId>http.api.test</groupId>
       <artifactId>http-api-test-core</artifactId>
+      <version>1.0-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>io.qameta.allure</groupId>
       <artifactId>allure-rest-assured</artifactId>
-      <version>2.17.3</version>
+      <version>${allure.version}</version>
     </dependency>
 
   </dependencies>

@@ -12,7 +12,7 @@ Created using [Spring Initializr](http://start.spring.io/). Dependencies:
 
 Be sure to have the following items installed:
 
-- JDK 11
+- JDK 17
 - Maven 3.6.1+
 
 ## Running the app
