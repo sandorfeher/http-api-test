@@ -232,4 +232,4 @@ public class ServiceUnderTestHook {
 ```
 
 Please find example hook
-here: [SUT hook](/examples/http-api-test-framework/src/test/java/com/example/test/hooks/ServiceUnderTestHook.java).
+here: [SUT hook](/examples/http-api-test-framework/src/test/java/com/example/test/hooks/EmployeeTestHook.java).
