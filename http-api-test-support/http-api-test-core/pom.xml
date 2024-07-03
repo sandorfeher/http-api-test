@@ -18,7 +18,6 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <java.version>17</java.version>
     <checkstyle.rules.directory>${basedir}/src/build/rules</checkstyle.rules.directory>
     <checkstyle.config.location>${checkstyle.rules.directory}/google_checks.xml
     </checkstyle.config.location>

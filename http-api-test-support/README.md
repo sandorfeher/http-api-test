@@ -14,7 +14,7 @@ with additionally implemented features enabling test automation from Day 1.
 
 Be sure to have the following items installed:
 
-- JDK 11
+- JDK 17
 - Maven 3.6.1+
 
 ### Technology Stack
