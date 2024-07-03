@@ -18,9 +18,9 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <java.version>11</java.version>
+    <java.version>17</java.version>
     <checkstyle.rules.directory>${basedir}/src/build/rules</checkstyle.rules.directory>
-    <checkstyle.config.location>${checkstyle.rules.directory}/checkstyle_rules.xml
+    <checkstyle.config.location>${checkstyle.rules.directory}/google_checks.xml
     </checkstyle.config.location>
     <checkstyle.default.suppressions.location>
       ${checkstyle.rules.directory}/suppressions_defaults.xml
@@ -29,10 +29,9 @@
     </checkstyle.suppressions.location>
 
     <maven-checkstyle-plugin.version>3.1.2</maven-checkstyle-plugin.version>
-    <checkstyle.version>8.39</checkstyle.version>
-    <lombok.version>1.18.22</lombok.version>
-    <aspectj.version>1.9.7</aspectj.version>
-    <assertj.version>3.22.0</assertj.version>
+    <lombok.version>1.18.34</lombok.version>
+    <aspectj.version>1.9.22.1</aspectj.version>
+    <assertj.version>3.26.0</assertj.version>
   </properties>
 
   <dependencies>

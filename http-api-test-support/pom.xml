@@ -20,29 +20,30 @@
     <java.version>11</java.version>
 
     <!-- versions -->
-    <jackson.version>2.13.1</jackson.version>
-    <logback.version>1.2.10</logback.version>
+    <jackson.version>2.17.1</jackson.version>
+    <logback.version>1.5.6</logback.version>
     <logback.json.version>0.1.5</logback.json.version>
     <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
     <maven-surefire-plugin.version>3.0.0-M5</maven-surefire-plugin.version>
-    <spring.version>5.3.15</spring.version>
-    <cucumber.version>7.2.3</cucumber.version>
-    <rest-assured.version>4.5.1</rest-assured.version>
-    <groovy.version>3.0.9</groovy.version>
-    <json-path.version>2.7.0</json-path.version>
+    <spring.version>6.1.10</spring.version>
+    <cucumber.version>7.18.0</cucumber.version>
+    <rest-assured.version>5.4.0</rest-assured.version>
+    <groovy.version>3.0.22</groovy.version>
+    <json-path.version>2.9.0</json-path.version>
 
-    <aspectj.version>1.9.7</aspectj.version>
-    <slf4j.version>1.7.36</slf4j.version>
-    <junit.jupiter.version>5.8.2</junit.jupiter.version>
-    <lombok.version>1.18.22</lombok.version>
+    <aspectj.version>1.9.22.1</aspectj.version>
+    <slf4j.version>2.0.13</slf4j.version>
+    <junit.jupiter.version>5.10.3</junit.jupiter.version>
+    <lombok.version>1.18.34</lombok.version>
     <maven-checkstyle-plugin.version>3.1.2</maven-checkstyle-plugin.version>
-    <assertj.version>3.22.0</assertj.version>
-    <allure.version>2.17.3</allure.version>
+    <assertj.version>3.26.0</assertj.version>
+    <allure.version>2.27.0</allure.version>
     <allure.reportVersion>2.13.8</allure.reportVersion>
     <allure.maven.version>2.11.2</allure.maven.version>
-    <checkstyle.version>8.39</checkstyle.version>
-    <guava.version>31.1-jre</guava.version>
-    <commons-lang3.version>3.12.0</commons-lang3.version>
+    <checkstyle.version>10.17.0</checkstyle.version>
+    <guava.version>33.2.1-jre</guava.version>
+    <commons-lang3.version>3.14.0</commons-lang3.version>
+    <versions-maven-plugin.version>2.17.0</versions-maven-plugin.version>
   </properties>
 
   <dependencyManagement>
@@ -199,5 +200,20 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>versions-maven-plugin</artifactId>
+        <version>${versions-maven-plugin.version}</version>
+        <configuration>
+          <excludes>
+            <exclude>http.api.test:http-api-test-core</exclude>
+          </excludes>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
 
 </project>
